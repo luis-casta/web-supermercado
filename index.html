@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="La Pompa - Tu supermercado de confianza con los mejores productos frescos, ofertas increíbles y servicio a domicilio. ¡Compra ahora!">
+    <meta name="keywords" content="supermercado, productos frescos, ofertas, delivery, La Pompa">
+    <meta name="author" content="La Pompa Supermercado">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="La Pompa - Supermercado de Calidad">
+    <meta property="og:description"
+        content="Los mejores productos frescos con ofertas increíbles y servicio a domicilio">
+
+    <title>La Pompa - Tu Supermercado de Confianza</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- ============================================
+         HEADER Y NAVEGACIÓN
+         ============================================ -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Logo La Pompa">
+                <span>La Pompa</span>
+            </a>
+
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#ofertas">Ofertas</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <!-- Buscador -->
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Buscar productos..." aria-label="Buscar productos">
+                        <span class="search-icon">🔍</span>
+                    </div>
+
+                    <!-- Toggle de tema -->
+                    <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                </div>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Menú de navegación">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <section class="hero" id="inicio">
+        <div class="hero-content container">
+            <div class="hero-text">
+                <h1 class="fade-in-up">Frescura y Calidad en Cada Compra</h1>
+                <p class="fade-in-up">Descubre los mejores productos frescos, ofertas increíbles y un servicio
+                    excepcional. ¡Tu supermercado de confianza está aquí!</p>
+                <div class="hero-buttons fade-in-up">
+                    <a href="#productos" class="btn btn-primary">Ver Productos</a>
+                    <a href="#ofertas" class="btn btn-secondary">Ofertas Especiales</a>
+                </div>
+            </div>
+            <div class="hero-image fade-in-up">
+                <img src="images/hero.png" alt="Productos frescos del supermercado">
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         PRODUCTOS DESTACADOS
+         ============================================ -->
+    <section class="section" id="productos">
+        <div class="container">
+            <div class="section-title">
+                <h2>Productos Destacados</h2>
+                <p>Lo mejor de nuestra selección para ti</p>
+            </div>
+
+            <div class="products-grid">
+                <!-- Producto 1 -->
+                <article class="product-card">
+                    <img src="images/productos-frescos.png" alt="Frutas y Verduras Frescas" class="product-image">
+                    <div class="product-info">
+                        <span class="product-category">Frutas & Verduras</span>
+                        <h3 class="product-title">Frutas Frescas Premium</h3>
+                        <p class="product-description">Selección diaria de las frutas más frescas y deliciosas
+                            directamente del campo.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$3.99/kg</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Producto 2 -->
+                <article class="product-card">
+                    <img src="images/abarrotes.png" alt="Abarrotes y Despensa" class="product-image">
+                    <div class="product-info">
+                        <span class="product-category">Abarrotes</span>
+                        <h3 class="product-title">Despensa Completa</h3>
+                        <p class="product-description">Todo lo que necesitas para tu despensa: granos, pastas, enlatados y más.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$5.99</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Producto 3 -->
+                <article class="product-card">
+                    <img src="images/lacteos.png" alt="Productos Lácteos" class="product-image">
+                    <div class="product-info">
+                        <span class="product-category">Lácteos</span>
+                        <h3 class="product-title">Lácteos Frescos</h3>
+                        <p class="product-description">Leche, quesos y yogures de las mejores marcas para toda tu
+                            familia.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$4.99</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Producto 4 -->
+                <article class="product-card">
+                    <img src="images/productos-frescos.png" alt="Carnes Frescas" class="product-image">
+                    <div class="product-info">
+                        <span class="product-category">Carnes</span>
+                        <h3 class="product-title">Carnes Premium</h3>
+                        <p class="product-description">Cortes selectos de carne fresca de la más alta calidad para tus recetas.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$8.99/kg</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Producto 5 -->
+                <article class="product-card">
+                    <img src="images/abarrotes.png" alt="Bebidas" class="product-image">
+                    <div class="product-info">
+                        <span class="product-category">Bebidas</span>
+                        <h3 class="product-title">Bebidas Refrescantes</h3>
+                        <p class="product-description">Amplia variedad de bebidas, jugos naturales y refrescos para toda ocasión.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$2.99</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Producto 6 -->
+                <article class="product-card">
+                    <img src="images/lacteos.png" alt="Snacks" class="product-image">
+                    <div class="product-info">
+                        <span class="product-category">Snacks</span>
+                        <h3 class="product-title">Snacks Variados</h3>
+                        <p class="product-description">Papas, galletas, chocolates y más para tus momentos de antojo.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$3.49</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Producto 7 -->
+                <article class="product-card">
+                    <img src="images/productos-frescos.png" alt="Congelados" class="product-image">
+                    <div class="product-info">
+                        <span class="product-category">Congelados</span>
+                        <h3 class="product-title">Productos Congelados</h3>
+                        <p class="product-description">Verduras, pizzas y comidas listas congeladas de excelente calidad.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$6.99</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Producto 8 -->
+                <article class="product-card">
+                    <img src="images/abarrotes.png" alt="Limpieza" class="product-image">
+                    <div class="product-info">
+                        <span class="product-category">Limpieza</span>
+                        <h3 class="product-title">Productos de Limpieza</h3>
+                        <p class="product-description">Todo lo necesario para mantener tu hogar impecable y reluciente.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$4.49</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Producto 9 -->
+                <article class="product-card">
+                    <img src="images/lacteos.png" alt="Cuidado Personal" class="product-image">
+                    <div class="product-info">
+                        <span class="product-category">Cuidado Personal</span>
+                        <h3 class="product-title">Cuidado Personal</h3>
+                        <p class="product-description">Shampoo, jabones, cremas y productos para tu cuidado diario.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$5.49</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         OFERTAS ESPECIALES
+         ============================================ -->
+    <section class="section offers-section" id="ofertas">
+        <div class="container">
+            <div class="section-title">
+                <h2>Ofertas Especiales</h2>
+                <p>Aprovecha nuestras increíbles promociones</p>
+            </div>
+
+            <div class="offers-grid">
+                <!-- Oferta 1 -->
+                <article class="offer-card">
+                    <img src="images/productos-frescos.png" alt="Oferta Frutas">
+                    <div class="offer-overlay">
+                        <span class="offer-badge">-30%</span>
+                        <h3 class="offer-title">Frutas de Temporada</h3>
+                        <p class="offer-description">Descuento especial en todas las frutas frescas</p>
+                    </div>
+                </article>
+
+                <!-- Oferta 2 -->
+                <article class="offer-card">
+                    <img src="images/abarrotes.png" alt="Oferta Abarrotes">
+                    <div class="offer-overlay">
+                        <span class="offer-badge">2x1</span>
+                        <h3 class="offer-title">Abarrotes Seleccionados</h3>
+                        <p class="offer-description">Lleva 2 productos por el precio de 1</p>
+                    </div>
+                </article>
+
+                <!-- Oferta 3 -->
+                <article class="offer-card">
+                    <img src="images/lacteos.png" alt="Oferta Lácteos">
+                    <div class="offer-overlay">
+                        <span class="offer-badge">-25%</span>
+                        <h3 class="offer-title">Lácteos Premium</h3>
+                        <p class="offer-description">Descuento en toda la línea de lácteos</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SERVICIOS
+         ============================================ -->
+    <section class="section" id="servicios">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestros Servicios</h2>
+                <p>Todo lo que necesitas para una experiencia perfecta</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Servicio 1 -->
+                <article class="service-card">
+                    <div class="service-icon">🚚</div>
+                    <h3 class="service-title">Delivery Rápido</h3>
+                    <p class="service-description">Entregamos tus compras en menos de 2 horas directamente a tu puerta.
+                    </p>
+                </article>
+
+                <!-- Servicio 2 -->
+                <article class="service-card">
+                    <div class="service-icon">🌱</div>
+                    <h3 class="service-title">Productos Frescos</h3>
+                    <p class="service-description">Selección diaria de productos frescos de la más alta calidad.</p>
+                </article>
+
+                <!-- Servicio 3 -->
+                <article class="service-card">
+                    <div class="service-icon">💳</div>
+                    <h3 class="service-title">Pago Seguro</h3>
+                    <p class="service-description">Múltiples métodos de pago con total seguridad y confianza.</p>
+                </article>
+
+                <!-- Servicio 4 -->
+                <article class="service-card">
+                    <div class="service-icon">⏰</div>
+                    <h3 class="service-title">Horario Extendido</h3>
+                    <p class="service-description">Abierto de lunes a domingo de 7:00 AM a 11:00 PM.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         TESTIMONIOS
+         ============================================ -->
+    <section class="section testimonials-section" id="testimonios">
+        <div class="container">
+            <div class="section-title">
+                <h2>Lo Que Dicen Nuestros Clientes</h2>
+                <p>Testimonios reales de clientes satisfechos</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <!-- Testimonio 1 -->
+                <article class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Excelente servicio y productos siempre frescos. El delivery es rápido y confiable. ¡Totalmente recomendado!"</p>
+                    <div class="testimonial-author">
+                        <strong>María González</strong>
+                        <span>Cliente frecuente</span>
+                    </div>
+                </article>
+
+                <!-- Testimonio 2 -->
+                <article class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Los mejores precios de la zona y la calidad es insuperable. Me encanta hacer mis compras aquí."</p>
+                    <div class="testimonial-author">
+                        <strong>Carlos Rodríguez</strong>
+                        <span>Cliente desde 2020</span>
+                    </div>
+                </article>
+
+                <!-- Testimonio 3 -->
+                <article class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"La atención al cliente es excepcional. Siempre encuentro todo lo que necesito y más."</p>
+                    <div class="testimonial-author">
+                        <strong>Ana Martínez</strong>
+                        <span>Cliente VIP</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer" id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Sobre Nosotros -->
+                <div class="footer-section">
+                    <h3>La Pompa</h3>
+                    <p>Tu supermercado de confianza desde 1995. Comprometidos con la calidad, frescura y el mejor
+                        servicio para nuestros clientes.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-link" aria-label="WhatsApp">💬</a>
+                    </div>
+                </div>
+
+                <!-- Enlaces Rápidos -->
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <a href="#inicio">Inicio</a>
+                    <a href="#productos">Productos</a>
+                    <a href="#ofertas">Ofertas</a>
+                    <a href="#servicios">Servicios</a>
+                </div>
+
+                <!-- Contacto -->
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>📍 Av. Principal 123, Ciudad</p>
+                    <p>📞 +1 (555) 123-4567</p>
+                    <p>✉️ info@lapompa.com</p>
+                    <p>⏰ Lun - Dom: 7:00 AM - 11:00 PM</p>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Suscríbete para recibir ofertas exclusivas y novedades.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Tu email" required aria-label="Email para newsletter">
+                        <button type="submit" class="btn btn-primary">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 La Pompa Supermercado. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         BOTÓN FLOTANTE DE WHATSAPP
+         ============================================ -->
+    <a href="https://wa.me/1234567890?text=Hola,%20quiero%20hacer%20un%20pedido%20en%20La%20Pompa" 
+       class="whatsapp-float" 
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Contactar por WhatsApp">
+        💬
+    </a>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
